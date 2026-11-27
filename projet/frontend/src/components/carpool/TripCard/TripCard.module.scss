@@ -1,0 +1,29 @@
+@use '../../../styles/tokens' as *;
+
+.layout {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  align-items: center;
+  gap: $space-4;
+
+  @include narrow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.day {
+  font-size: 0.85rem;
+  color: $text-muted;
+  text-transform: capitalize;
+}
+
+.hour {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $accent;
+}
+
+.driver {
+  color: $text-muted;
+  font-size: 0.875rem;
+}
