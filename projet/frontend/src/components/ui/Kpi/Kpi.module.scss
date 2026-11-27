@@ -1,0 +1,23 @@
+@use '../../../styles/tokens' as *;
+
+.grid {
+  display: grid;
+  gap: $space-4;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  margin-bottom: $space-5;
+}
+
+.kpi {
+  text-align: center;
+}
+
+.value {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: $accent;
+}
+
+.label {
+  color: $text-muted;
+  font-size: 0.85rem;
+}

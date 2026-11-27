@@ -1,0 +1,10 @@
+@use '../../../styles/tokens' as *;
+
+.empty {
+  text-align: center;
+  padding: $space-6 $space-4;
+  color: $text-muted;
+  background: $surface;
+  border: 1px dashed $border;
+  border-radius: $radius;
+}

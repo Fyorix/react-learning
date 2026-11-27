@@ -1,0 +1,12 @@
+@use '../../../styles/tokens' as *;
+
+.link {
+  display: inline-block;
+  margin-bottom: $space-4;
+  text-decoration: none;
+  color: $text-muted;
+
+  &:hover {
+    color: $accent;
+  }
+}

@@ -1,0 +1,44 @@
+@use '../../../styles/tokens' as *;
+
+.wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: $surface;
+
+  th,
+  td {
+    text-align: left;
+    padding: $space-3;
+    border-bottom: 1px solid $border;
+    vertical-align: middle;
+  }
+
+  th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $text-muted;
+    font-weight: 600;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+.compact {
+  font-size: 0.85rem;
+
+  th,
+  td {
+    padding: $space-2;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}

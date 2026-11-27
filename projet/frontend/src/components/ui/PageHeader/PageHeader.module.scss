@@ -1,0 +1,15 @@
+@use '../../../styles/tokens' as *;
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: $space-4;
+  margin-bottom: $space-5;
+  flex-wrap: wrap;
+}
+
+.description {
+  color: $text-muted;
+  margin-top: $space-1;
+}

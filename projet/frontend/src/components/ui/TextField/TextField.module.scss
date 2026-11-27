@@ -1,0 +1,45 @@
+@use '../../../styles/tokens' as *;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $text-muted;
+}
+
+.control {
+  padding: $space-2 $space-3;
+  border: 1px solid $border;
+  border-radius: $radius-small;
+  background: $surface;
+  width: 100%;
+
+  &:focus {
+    outline: 2px solid $accent-soft;
+    border-color: $accent;
+  }
+}
+
+textarea.control {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.error {
+  color: $danger;
+  font-size: 0.8rem;
+}
+
+.hint {
+  color: $text-muted;
+  font-size: 0.8rem;
+}

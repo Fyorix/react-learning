@@ -1,0 +1,29 @@
+@use '../../../styles/tokens' as *;
+
+.card {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  padding: $space-5;
+}
+
+.compact {
+  padding: $space-4;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color 0.15s, transform 0.15s;
+
+  &:hover {
+    border-color: $accent;
+    transform: translateY(-1px);
+  }
+}
+
+.title {
+  margin-bottom: $space-3;
+}

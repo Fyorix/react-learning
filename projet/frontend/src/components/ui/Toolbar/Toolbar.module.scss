@@ -1,0 +1,14 @@
+@use '../../../styles/tokens' as *;
+
+.toolbar {
+  display: flex;
+  gap: $space-3;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: $space-5;
+
+  // les champs (rendus dans un <label>) gardent une largeur lisible
+  > label {
+    min-width: 160px;
+  }
+}

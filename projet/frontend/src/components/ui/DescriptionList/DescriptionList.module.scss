@@ -1,0 +1,25 @@
+@use '../../../styles/tokens' as *;
+
+.list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: $space-2 $space-5;
+  margin: 0;
+}
+
+.term {
+  color: $text-muted;
+}
+
+.description {
+  margin: 0;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+// chaque paire dt/dd est groupée dans une <div> (HTML valide) qui ne crée pas de boîte
+.item {
+  display: contents;
+}
