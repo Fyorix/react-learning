@@ -1,0 +1,5 @@
+services:
+  front-carpool:
+    build: .
+    ports:
+      - "5105:80"

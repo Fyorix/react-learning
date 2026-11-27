@@ -1,0 +1,16 @@
+package fr.epita.platform.apps.timesheet.repository;
+
+import fr.epita.platform.apps.timesheet.entity.Project;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.UUID;
+
+public interface ProjectRepository extends JpaRepository<Project, UUID> {
+
+    List<Project> findAllByOrderByCodeAsc();
+
+    boolean existsByCodeIgnoreCase(String code);
+
+    boolean existsByCodeIgnoreCaseAndIdNot(String code, UUID id);
+}
